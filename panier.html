@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+    <title>Mon panier – </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="ok.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <a href="index.html" class="logo">
+      <span class="logo-text"> NoMistake Business</span>
+    </a>
+
+    <nav class="nav-right">
+      <a href="panier.html" class="nav-link cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+        <span>Panier</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main panier-page">
+  <h1>🛒 Mon panier</h1>
+
+  <div id="cart-container" class="cart-container">
+    <!-- Articles générés en JS -->
+  </div>
+
+  <div class="cart-summary">
+    <p>Total :</p>
+    <h2 id="cart-total">0 €</h2>
+
+    <a
+      id="whatsapp-checkout"
+      class="btn btn-primary"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+      Commander via WhatsApp
+  </a>
+  </div>
+</main>
+
+<script src="panier.js"></script>
+</body>
+</html>
